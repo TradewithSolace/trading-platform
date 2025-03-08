@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+    <head> 
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Solace Trading Bot</title> 
+        <link rel="stylesheet" href="styles.css">
+    </head> 
+    <body> 
+        <header>
+            <div id="menu-icon" onclick="openNav()">&#9776;</div>
+        </header> 
+
+        <div id="sidebar">
+            <button id="close-btn" onclick="closeNav()">ⓧ</button>
+            <ul>
+                <li> <a href="javascript:void(0)" onclick="showPage('wallet')">Wallet</a></li>
+                <li> <a href="javascript:void(0)" onclick="showPage('explore')">Explore</a></li>
+                <li> <a href="javascript:void(0)" onclick="showPage('portfolio')">Portfolio</a></li>
+                <li> <a href="javascript:void(0)" onclick="showPage('tracker')">Tracker</a></li>
+                <li> <a href="javascript:void(0)" onclick="showPage('copytrade')">Copy Trade</a></li>
+                <li> <a href="javascript:void(0)" onclick="showPage('sniper')">Sniper</a></li>
+            </ul>
+        </div>
+
+        <nav>
+            <div class="homebtn-container">
+                <img src="https://via.placeholder.com/300" alt="Home" class="homebtn-img" id="home-btn">
+            </div>
+        </nav>
+
+
+        <main> 
+            <section id="home-page" class="page">
+                <h2>Home Page</h2>
+                <p>Welcome to Solace! Choose an option to get started.</p>
+            </section>
+
+            <section id="wallet-page" class="page">
+                <h2>Wallet</h2>
+                <p>Your wallet details will be displayed here.</p>
+            </section>
+
+            <section id="explore-page" class="page">
+                <h2>Explore Charts</h2>
+                <p>View live trading charts here.</p>
+            </section>
+
+            <section id="portfolio-page" class="page">
+                <h2>Portfolio</h2>
+                <p>View your portfolio.</p>
+            </section>
+
+            <section id="tracker-page" class="page">
+                <h2>Wallet Tracker</h2>
+                <p>Track other wallets and transactions.</p>
+            </section>
+
+            <section id="copytrade-page" class="page">
+                <h2>Copy Trade</h2>
+                <p>Automate trading by copying succesful wallets.</p>
+            </section>
+
+            <section id="sniper-page" class="page">
+                <h2>Sniper</h2>
+                <p>Snipe tokens before anyone else.</p>
+            </section>
+            
+        </main> 
+
+        <script src="script.js"></script>
+        
+    </body> 
+    </html>
